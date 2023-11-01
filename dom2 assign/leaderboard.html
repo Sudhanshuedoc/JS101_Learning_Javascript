@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            border: 1px solid red;
+            width: 50%;
+            margin: auto;
+
+        }
+
+        #min {
+            border: 1px solid green;
+            width: 70px;
+            height: 70px;
+            text-align: center;
+            padding: 15px;
+
+        }
+
+        #min div {
+            width: 50px;
+            height: 50px;
+            border: 1px solid pink;
+            padding-top: 5px;
+        }
+
+        #minmax {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #score {
+            width: 60%;
+            border: 1px solid blue;
+
+            margin-top: 10px;
+            margin: auto;
+
+        }
+
+        #score div {
+            width: 100%px;
+            height: 50px;
+            border: 1px solid black;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        button {
+            font-size: 40px;
+            margin: 0px 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="minmax">
+            <div id="min">
+                <div id="min">43</div>
+                <p>MIN</p>
+            </div>
+            <div id="min">
+                <div id="max">2019</div>
+                <p>MAX</p>
+            </div>
+        </div>
+
+        <div id="score">
+
+            <div id="bar">#</div>
+            <div>
+                <button id="btn">1</button>
+                <button id="btn">2</button>
+                <button id="btn">3</button>
+            </div>
+            <div><button id="btn">4</button>
+                <button id="btn">5</button>
+                <button id="btn">6</button>
+            </div>
+            <div><button id="btn">7</button>
+                <button id="btn">8</button>
+                <button id="btn">9</button>
+            </div>
+            <div><button id="btn">0</button>
+            </div>
+            <div style="background-color: black;">
+                <button style="border: none; background-color: black; color: white;" id="sub">Submit</button>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+<script>
+    let bar = document.getElementById("bar");
+    let btn = document.querySelectorAll("#btn");
+    let min = document.querySelector("#min");
+    let max = document.querySelector("#max");
+    let sub = document.querySelector("#sub")
+    let bag = "";
+    let value = 0;
+    for (let i = 0; i < btn.length; i++) {
+        btn[i].addEventListener('click', function () {
+            bag += btn[i].innerText;
+            bar.innerText = bag;
+            value = bar.innerText;
+        })
+    }
+
+    sub.addEventListener('click', function () {
+        if (value < parseInt(min.innerText)) {
+            min.innerText = value;
+        }
+        else if (value > parseInt(max.innerText)) {
+            max.innerText = value;
+        }
+    })
+    // sub.addEventListener("click", function (
+    //     {
+    //         if(parseInt(bar.innerText) > parseInt(min.innerText))
+    //         {
+    //         min.innerText = bar.innerText;
+    //     }
+    //     }
+    // ))
+
+
+</script>
+
+</html>
