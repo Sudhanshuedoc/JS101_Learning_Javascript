@@ -16,10 +16,12 @@ forms.addEventListener("submit", function (e) {
     td.innerText = obj.input1;
     td2.innerText = priorities.value;
     if (td2.innerText == "High") {
-        td3.innerText = "★★★★★"
+        td3.innerText = "★★★★★";
+        td2.style.backgroundColor = "red";
     }
     else if (td2.innerText == "Low") {
-        td3.innerText = "★"
+        td3.innerText = "★";
+        td2.style.backgroundColor = "green";
     }
     tr.append(td, td2, td3)
     thead.append(tr);
