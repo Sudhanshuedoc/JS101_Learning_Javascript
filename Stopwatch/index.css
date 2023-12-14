@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: #c2e59c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+h1{
+    text-align: center;
+    font-size: 4vw;
+    color: white;
+    letter-spacing: 2px;
+    position:relative;
+    top: 8vh;
+    
+}
+#below{
+    width: 40vw ;
+    /* border: 1px solid red; */
+    height: 40vh;
+    border-radius: 15px;
+    margin: auto;
+    background: #43cea2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+margin-top: 18vh;
+   
+}
+#top{
+    width: 50vw ;
+    /* border: 1px solid red; */
+    height: 25vh;
+    border-radius: 10px;
+    margin: auto;
+    background: #c2e59c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #c2e59c, #64b3f4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c2e59c, #64b3f4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+    
+    
+    
+margin-top:-37vh;
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+#btn{
+    position: relative;
+    top: 12vh;
+    left: 40vw;
+    
+}
+#btn button{
+    border: none;
+    width: 5vw;
+    height: 5vh;
+    margin-right: 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1vw;
+}
+
+button:nth-child(1)
+{
+    background-color:  #48cae4;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    cursor: pointer;
+ 
+}
+
+button:nth-child(3)
+{
+    background-color:#06d6a0;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    cursor: pointer;
+}
+button:nth-child(2)
+{
+    background-color:#d62828;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    cursor: pointer;
+}
