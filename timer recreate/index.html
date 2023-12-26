@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Custom Timer</title>
+</head>
+<style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.timer-container {
+  text-align: center;
+}
+
+#timer {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+button {
+  font-size: 1em;
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+input {
+  width: 60px;
+  text-align: center;
+  margin: 5px;
+  font-size: 1em;
+}
+
+</style>
+<body>
+  <div class="timer-container">
+    <div>
+      <label for="hours">Hours:</label>
+      <input type="number" id="hours" min="0" value="0">
+    </div>
+    <div>
+      <label for="minutes">Minutes:</label>
+      <input type="number" id="minutes" min="0" value="0">
+    </div>
+    <div>
+      <label for="seconds">Seconds:</label>
+      <input type="number" id="seconds" min="0" value="0">
+    </div>
+    <div id="timer">00:00:00</div>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="pauseTimer()">Pause</button>
+    <button onclick="resetTimer()">Reset</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
