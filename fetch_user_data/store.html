@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<style>
+    #profile
+    {
+        
+        height: auto;
+        padding: 20px;
+        width: 40%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+    .profilecard{
+        width: 200px;
+        height: 250px;
+        border: 2px solid black;
+        padding: 20px;
+    }
+    .profilecard > img{
+        width: 180px;
+        height: 180px;
+    }
+    button{
+        height: 50px;
+        width: 100px;
+        background-color: teal;
+        color: aliceblue;
+        border: none;
+        border-radius: 3px;
+        position: relative;
+        top: 50%;
+        left: 45%;
+    }
+    
+</style>
+<body>
+    <div id="profile">
+
+    </div>
+    <button>Fetch User</button>
+    
+</body>
+</html>
+<script src="store.js"></script>
