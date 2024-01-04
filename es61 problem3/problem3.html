@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // Function to convert a character to lower case
+const charToLower = char => char.toLowerCase();
+
+// Function to convert a word to lower case using the charToLower function
+const wordToLower = word => word.split('').map(charToLower).join('');
+
+// Function to convert an array of strings to an array of lower case strings using wordToLower function
+const arrayToLower = array => array.map(wordToLower);
+
+// Sample Input
+const inputArray = ["MA", "SA", "I", "SCH", "OOL"];
+
+// Sample Output
+const outputArray = arrayToLower(inputArray);
+
+console.log(outputArray);
+
+</script>
